@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ja">
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Outsiderのテックブログ</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1>Outsiderのテックブログ</h1>
+    <nav>
+      <a href="/">記事一覧</a>
+      <a href="/create">新規作成</a>
+    </nav>
+    <p>新規作成</p>
+
+    <form method="post" action="/create">
+      <input type="text" name="title" placeholder="タイトル">
+      <textarea name="content" placeholder="本文"></textarea>
+      <input type="submit" name="submit" value="投稿する">
+    </form>
+
+  </body>
+</html>

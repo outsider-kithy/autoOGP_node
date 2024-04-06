@@ -1,0 +1,50 @@
+body{
+    font-size: 14px;
+}
+a{
+    color: rgb(0, 162, 255);
+    text-decoration: none;
+}
+
+img{
+    width: 100%;
+}
+
+.col3{
+    max-width: 940px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+a.thumbnail{
+    display: block;
+    max-width: 32%;
+    background-color: #fff;
+    box-shadow: 5px 5px 5px rgba(0,0,0,.3);
+    border-radius: 1.0rem;
+    transition: 0.3s;
+    &:hover{
+        transform: translateY(10px);
+    }
+    img{
+        border-radius: 1.0rem 1.0rem 0 0;
+    }
+    h2{
+        font-size: 1.0rem;
+        padding: 0 1.0rem;
+    }
+}
+
+input[type=text]{
+    display: block;
+    width: 500px;
+    margin: 1.0rem 0;
+    padding: 0.5rem;
+}
+textarea{
+    display: block;
+    width: 500px;
+    height: 200px;
+    margin: 1.0rem 0;
+    padding: 0.5rem;
+}

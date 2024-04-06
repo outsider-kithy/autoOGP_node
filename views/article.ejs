@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ja">
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Outsiderのテックブログ</title>
+
+    <!--OGP-->
+    <meta property="og:type" content="website">
+    <meta property="ogp:title" content="<%= article.title %>">
+    <meta property="ogp:image" content="<%= article.ogp_url %>">
+    <meta property="og:url" content="http://localhost:3000/article?id=<%= article.id %>" />
+    <meta property="og:site_name" content="Outsiderのテックブログ" />
+
+    <!--CSS-->
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1>Outsiderのテックブログ</h1>
+    <nav>
+      <a href="/">記事一覧</a>
+      <a href="/create">新規作成</a>
+    </nav>
+    <p>個別記事を表示</p>
+    <h2><%= article.title %></h2>
+    <p><%= article.content %></p>
+  </body>
+</html>

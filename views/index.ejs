@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ja">
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Outsiderのテックブログ</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1>Outsiderのテックブログ</h1>
+    <nav>
+      <a href="/">記事一覧</a>
+      <a href="/create">新規作成</a>
+    </nav>
+    <p>記事一覧</p>
+
+    <div class="col3">
+    <% for(let i in articles){%>
+      <a href="/article?id=<%= articles[i].id %>" class="thumbnail">
+        <img src="<%= articles[i].ogp_url %>">
+        <h2><%= articles[i].title %></h2>
+      </a>
+    <%}%>
+    </div>
+   
+  </body>
+</html>
